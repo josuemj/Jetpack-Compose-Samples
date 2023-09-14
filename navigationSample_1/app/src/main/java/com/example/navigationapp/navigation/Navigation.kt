@@ -20,7 +20,7 @@ fun navigation(){
         }
 
         composable(route = Screen.DetailsScreen.route){
-            DetailsScreen()
+            DetailsScreen(navController)
         }
     }
 }

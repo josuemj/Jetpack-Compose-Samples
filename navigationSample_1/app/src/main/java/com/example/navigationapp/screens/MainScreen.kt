@@ -35,7 +35,7 @@ fun MainScreen(navController: NavController){
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Screen_1",
+            text = "Welcome!",
             fontSize = 24.sp,
             color = Color.White
         )
