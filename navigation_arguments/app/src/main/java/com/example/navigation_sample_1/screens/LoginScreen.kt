@@ -13,6 +13,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.navigation_sample_1.navigation.Screen
 
 @Composable
 fun LoginScreen(navController: NavController){
@@ -68,7 +69,20 @@ fun LoginScreen(navController: NavController){
             )
         }
         
-        Button(onClick = { /*TODO*/ }, modifier = Modifier.padding(30.dp)) {
+        Button(
+            onClick = {
+                if (userName == ""){
+                          println("No usernanme")
+                      }
+
+                if (password == ""){
+                    println("No usernanme")
+                }
+
+                navController.navigate(Screen.WelcomeScreen.route)
+
+            },
+            modifier = Modifier.padding(30.dp)) {
             Text(text = "Login")
         }
 
