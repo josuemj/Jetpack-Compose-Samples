@@ -6,7 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.databases.ui.launch.LaunchScreen
 import com.example.databases.ui.login.LoginScreen
-import com.example.databases.ui.register.RegistScreen
+import com.example.databases.ui.register.Register
 
 @Composable
 fun Navigation(){
@@ -20,7 +20,7 @@ fun Navigation(){
         }
 
         composable(route = Screens.RegistScreen.route){
-            RegistScreen(navController = navController)
+            Register.RegistScreen(navController = navController)
         }
 
         composable(route = Screens.LoginScreen.route){
