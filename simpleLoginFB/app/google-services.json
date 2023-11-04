@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10799467975",
+    "project_id": "simpleloginfb-77837",
+    "storage_bucket": "simpleloginfb-77837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10799467975:android:b3d502501d0aaa9dbfdde2",
+        "android_client_info": {
+          "package_name": "com.example.simpleloginfb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9_JygGfuj2SPl3ILGlgIaUYojorU8Xcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

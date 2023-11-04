@@ -1,15 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.google.gms.google-services'
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace 'com.example.noteapp2'
+    namespace 'com.example.simpleloginfb'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.noteapp2"
+        applicationId "com.example.simpleloginfb"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -55,7 +55,6 @@ dependencies {
     implementation "androidx.compose.ui:ui:$compose_ui_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
     implementation 'androidx.compose.material:material:1.2.0'
-
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -63,14 +62,9 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
-    //import the BoM for the firebase platform
+    //Firebase and auth :)
     implementation platform('com.google.firebase:firebase-bom:30.1.0') //KEY!
-
-    //authentication
     implementation 'com.google.firebase:firebase-auth-ktx'
-    //implementation 'com.google.firebase:firebase-auth:22.2.0'
-
-    //Coroutine
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1'
 
     //Navigation
